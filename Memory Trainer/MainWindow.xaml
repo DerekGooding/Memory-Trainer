@@ -1,0 +1,22 @@
+﻿<Window x:Class="Memory_Trainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memory_Trainer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid Background="Wheat">
+        <StackPanel Orientation="Horizontal">
+        <Grid Margin="20,0,0,0" x:Name="G_Grid"  VerticalAlignment="Center" Width="400" Height="400" Background="White">
+            <StackPanel x:Name="SP_Grid"/>
+        </Grid>
+            <StackPanel Margin="20,0,0,0">
+                <Label Content="Last Clicked" FontSize="25"/>
+                <Label Name="L_Output" Content="--"  HorizontalAlignment="Center" Foreground="Red" FontSize="22"/>
+                <Label Content="Target" FontSize="25"/>
+                <Label Name="L_Target" Content="--"  HorizontalAlignment="Center" Foreground="Blue" FontSize="22"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\bin\Debug\Memory Trainer.exe.config
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\bin\Debug\Memory Trainer.exe
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\bin\Debug\Memory Trainer.pdb
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.csprojAssemblyReference.cache
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\MainWindow.g.cs
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\App.g.cs
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer_MarkupCompile.cache
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer_MarkupCompile.lref
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\MainWindow.baml
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.g.resources
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory_Trainer.Properties.Resources.resources
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.csproj.GenerateResource.cache
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.csproj.CoreCompileInputs.cache
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.exe
+C:\Users\DGooding\source\repos\Memory Trainer\Memory Trainer\obj\Debug\Memory Trainer.pdb
