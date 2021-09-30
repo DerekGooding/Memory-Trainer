@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Media;
 
 namespace Memory_Trainer
 {
@@ -13,7 +14,7 @@ namespace Memory_Trainer
         private MainWindow MyWindow { get; set; }
         private readonly ColorAnimation colorAnimation;
         private readonly Storyboard storyboard;
-        private Brush defaultColor = Brushes.LightGray;
+        private readonly Brush defaultColor = Brushes.LightGray;
         private readonly Brush correctColor = Brushes.Green;
         private readonly Brush failColor = Brushes.Red;
 
@@ -44,11 +45,14 @@ namespace Memory_Trainer
             if (ID == MyWindow.Target)
             {
                 SetColor(correctColor);
+                SystemSounds.Beep.Play();
+                MyWindow.storyboard.Begin();
                 MyWindow.L_Output.Content = "Correct";
             }
             else
             {
                 SetColor(failColor);
+                SystemSounds.Hand.Play();
                 MyWindow.L_Output.Content = "Fail";
             }
             storyboard.Begin();

@@ -6,6 +6,7 @@ using System.Speech.Synthesis;
 using System.Speech.AudioFormat;
 using System.IO;
 using System.Linq;
+using System.Windows.Media.Animation;
 
 namespace Memory_Trainer
 {
@@ -21,6 +22,7 @@ namespace Memory_Trainer
             PrepareBoard();
             GetVoice();
             RandomizeTarget();
+            PrepareTimerBar();
         }
         void PrepareBoard()
         {
@@ -98,5 +100,26 @@ namespace Memory_Trainer
             });
             thread.Start();
         }
+
+        public DoubleAnimation doubleAnimation;
+        public Storyboard storyboard;
+        private void PrepareTimerBar()
+        {
+            doubleAnimation = new DoubleAnimation()
+            {
+                Duration = TimeSpan.FromSeconds(5),
+                To = 200,
+                From = 0
+            };
+            storyboard = new Storyboard();
+            storyboard.Children.Add(doubleAnimation);
+            Storyboard.SetTarget(doubleAnimation, FillAmount);
+            Storyboard.SetTargetProperty(doubleAnimation, new PropertyPath(HeightProperty));
+            storyboard.Begin();
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) => FillPercent(e.NewValue / 10);
+
+        private void FillPercent(double value) => FillAmount.Height = 200 - (value * 200);
     }
 }

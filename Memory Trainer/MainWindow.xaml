@@ -8,14 +8,19 @@
         Title="MainWindow" Height="450" Width="600">
     <Grid Background="Wheat">
         <StackPanel Orientation="Horizontal">
-        <Grid Margin="20,0,0,0" x:Name="G_Grid"  VerticalAlignment="Center" Width="400" Height="400" Background="White">
-            <StackPanel x:Name="SP_Grid"/>
-        </Grid>
+            <Grid Margin="20,0,0,0" x:Name="G_Grid"  VerticalAlignment="Center" Width="400" Height="400" Background="White">
+                <StackPanel x:Name="SP_Grid"/>
+            </Grid>
             <StackPanel Margin="20,0,0,0">
                 <Label Content="Last Clicked" FontSize="25"/>
                 <Label Name="L_Output" Content="--"  HorizontalAlignment="Center" Foreground="Red" FontSize="22"/>
                 <Label Content="Target" FontSize="25"/>
                 <Label Name="L_Target" Content="--"  HorizontalAlignment="Center" Foreground="Blue" FontSize="22"/>
+                <Grid>
+                    <Border  CornerRadius="40" Height="200" Width="78" Background="Red" VerticalAlignment="Bottom"/>
+                    <Rectangle x:Name="FillAmount" Height="200" Width="80" Fill="Wheat" VerticalAlignment="Top"/>
+                    <Border Height="200" Width="80" BorderBrush="Black" BorderThickness="2" CornerRadius="40"/>
+                </Grid>
             </StackPanel>
         </StackPanel>
     </Grid>
