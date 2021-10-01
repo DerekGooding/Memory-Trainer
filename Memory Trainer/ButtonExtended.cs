@@ -45,7 +45,8 @@ namespace Memory_Trainer
             if (ID == MyWindow.Target)
             {
                 SetColor(correctColor);
-                SystemSounds.Beep.Play();
+                //SystemSounds.Beep.Play();
+                MyWindow.storyboard.Stop();
                 MyWindow.storyboard.Begin();
                 MyWindow.L_Output.Content = "Correct";
             }

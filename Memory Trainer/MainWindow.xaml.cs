@@ -7,6 +7,7 @@ using System.Speech.AudioFormat;
 using System.IO;
 using System.Linq;
 using System.Windows.Media.Animation;
+using System.Media;
 
 namespace Memory_Trainer
 {
@@ -115,6 +116,16 @@ namespace Memory_Trainer
             storyboard.Children.Add(doubleAnimation);
             Storyboard.SetTarget(doubleAnimation, FillAmount);
             Storyboard.SetTargetProperty(doubleAnimation, new PropertyPath(HeightProperty));
+            storyboard.Completed += HandleComplete;
+            storyboard.Begin();
+            
+        }
+
+        private void HandleComplete(object sender, EventArgs e)
+        {
+            SystemSounds.Hand.Play();
+            RandomizeTarget();
+            storyboard.Stop();
             storyboard.Begin();
         }
 
