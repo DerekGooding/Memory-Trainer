@@ -28,3 +28,4 @@ D:\Users\djgoo\Documents\GitHub\Memory-Trainer\Memory Trainer\obj\Debug\Memory T
 D:\Users\djgoo\Documents\GitHub\Memory-Trainer\Memory Trainer\obj\Debug\Memory Trainer.csproj.CoreCompileInputs.cache
 D:\Users\djgoo\Documents\GitHub\Memory-Trainer\Memory Trainer\obj\Debug\Memory Trainer.exe
 D:\Users\djgoo\Documents\GitHub\Memory-Trainer\Memory Trainer\obj\Debug\Memory Trainer.pdb
+D:\Users\djgoo\Documents\GitHub\Memory-Trainer\Memory Trainer\obj\Debug\Memory Trainer.csproj.SuggestedBindingRedirects.cache
